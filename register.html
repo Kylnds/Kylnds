@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - San Juan Quezon</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body, html {
+  height: 10%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+      text-align: center;
+      background-color: var(--primary-color);
+      color: var(--font-color);
+      padding: 10px 0;
+    }
+
+    .site-logo {
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    .site-logo img {
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+.login-container {
+  width: 300px;
+  padding: 16px;
+  background-color: rgb(254, 255, 255);
+  margin: 50px auto;
+  border: 1px solid #bfd2d7;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+:root {
+  --primary-color: rgb(153, 183, 214);
+  --secondary-color: #FCF6F5FF;
+  --accent-color: #89ABE3FF;
+  --font-color: #1b1a1a;
+  --background-color: #dbd2c4; 
+}
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 4px;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+p {
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--font-color);
+      padding: 10px 0;
+      text-align: center;
+    }
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-content {
+  --primary-color: rgb(153, 183, 214);
+  --secondary-color: #FCF6F5FF;
+  --accent-color: #89ABE3FF;
+  --font-color: #1b1a1a;
+  --background-color: #f3e6d2; 
+}
+
+    
+</style>
+<body>
+    <div class="site-header">
+      <h1>San Juan Quezon</h1>
+    </div>
+    <div class="site-logo">
+      <img src="logo1.png" alt="San Juan Quezon Logo">
+    </div>
+    
+    <div class="login-container">
+      <h2>Register</h2>
+      <form action="/register" method="post">
+        <input type="text" placeholder="Username" name="username" required>
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
+        <input type="password" placeholder="Confirm Password" name="confirm-password" required>
+        <input type="date" name="registration-date" value="<?php echo date('Y-m-d'); ?>" required >
+        <input type="submit" value="Register">
+        <p>Already have an account? <a href="/login">Login</a></p>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 San Juan Quezon. All rights reserved.</p>
+          <div style="text-align: right;">
+            <p>Email: <a href="mailto:info@sanjuanquezon.ph" style="color: var(--font-color); text-decoration: none;">info@sanjuanquezon.ph</a></p>
+            <p>Contact No: <a href="tel:+639123456789" style="color: var(--font-color); text-decoration: none;">+63 912 345 6789</a></p>
+          </div>
+        </div>
+      </form>
+
+</body>
+</html>
